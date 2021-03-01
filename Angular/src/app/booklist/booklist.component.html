@@ -1,0 +1,32 @@
+
+    <div class="row">
+        <div class="col s12 m12">
+            <h3 class="center">Book List</h3>
+          <div class="card grey">
+            <table class="responsive-table centered highlight">
+                <thead>
+                  <tr>
+                      <th>Book</th>
+                      <th>ISBN Number</th>
+                      <th>Author</th>
+                      <th>Price</th>
+                      <th>Available</th>
+                  </tr>
+                </thead>
+            
+                <tbody>
+                    <tr *ngFor="let com of listbooks">
+                        <td>{{com.name}}</td>
+                        <td>{{com.isbn}}</td>
+                        <td>{{com.author}}</td>
+                        <td>Rs: {{com.price}}.00</td>
+                        <td>{{com.available}}</td>
+                      </tr>
+                </tbody>
+              </table>
+          </div>
+          
+          <a class="waves-effect waves-light btn">Add New Book</a>
+        </div>
+      </div>
+  

@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="col s6 m6">
+        <div class="card">
+            <h3>Add New Book</h3>
+            <div class="row">
+                <form class="col s12" #addbook = "ngForm" (ngSubmit) = "onClickSubmit(addbook)">
+                  <div class="row">
+                    <div class="input-field col s10">
+                      <input id="book_name" name="name" #name="ngModel" type="text" class="validate" ngModel required>
+                      <label for="book_name">Book Name</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s10">
+                      <input id="isbn" name="isbn" #isbn="ngModel" type="text" class="validate" ngModel required> 
+                      <label for="isbn">ISBN Number</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s10">
+                      <input id="author" name="author" #author="ngModel" type="text" class="validate" ngModel required>
+                      <label for="author">Author Name</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s10">
+                      <input id="price" name="price" #price="ngModel" type="text" class="validate" ngModel required>
+                      <label for="price">Price(Rs.)</label>
+                    </div>
+                  </div>
+                  <input type="submit" value="Add" class="waves-effect waves-light btn">
+                  <input type="button" value="Reset" (click)="resetForm(addbook)" class="waves-effect waves-light btn right">
+
+                </form>
+              </div>
+        </div>
+    </div>
+</div>

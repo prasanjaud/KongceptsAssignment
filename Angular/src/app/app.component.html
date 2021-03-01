@@ -1,0 +1,15 @@
+
+
+<nav>
+  <div class="nav-wrapper">
+    <div class="container">
+      <a (click)=Home() class="brand-logo">Book Shop</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a (click)=handelBooklist()>Book List</a></li>
+        <li><a (click)=handelAddBook()>Add Book</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
